@@ -18,7 +18,7 @@ public class FromPhrase {
     private String joinType;
     private String expression;
     private boolean isSubQuery;  // 是否子查询
-    private SelectAndFromPhrase subSelectPhrase;  //子查询语句
+    private SelectAndFromPhrase subQueryPhrase;  //子查询语句
 
     public FromPhrase(SqlNode sqlNode, String joinType) {
         this.sqlKind = sqlNode.getKind().name();
@@ -30,6 +30,6 @@ public class FromPhrase {
         }
         this.joinType = joinType;
         this.isSubQuery = false;
-        this.subSelectPhrase = null;
+        this.subQueryPhrase = null;
     }
 }

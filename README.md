@@ -2,13 +2,17 @@
 使用calcite解析sql语句，输出sql中各个部分。可用于sql血缘分析。
 
 # input
-postman post http://localhost:8080/sql/parse
+postman   
+
+`post http://localhost:8080/sql/parse`  
+```
 {
-"sql":"select a.cl as a_cl,b.cl from test a join (select id ,amt from trx) b on a.id = b.id"
+    "sql":"select a.cl as a_cl,b.cl from test a join (select id ,amt from trx) b on a.id = b.id"
 }
+```
 
 # output
-
+```
 {
 "selectPhrases": [
 {
@@ -65,3 +69,4 @@ postman post http://localhost:8080/sql/parse
 }
 ]
 }
+```

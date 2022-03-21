@@ -5,6 +5,13 @@ import org.apache.calcite.sql.SqlJoin;
 import org.apache.calcite.sql.SqlKind;
 import org.apache.calcite.sql.SqlNode;
 
+/**
+ * @author: Charlie Qzy
+ * @date: 2022/3/21
+ * @description:
+ * @version: 1.0.0
+ */
+
 @Data
 public class FromPhrase {
     private String sqlKind;
